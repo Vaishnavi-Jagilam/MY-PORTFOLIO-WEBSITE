@@ -59,35 +59,21 @@ const Portfolio = () => {
   };
   const projects = [
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack MERN application with payment integration, admin dashboard, and real-time order tracking.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe", "Socket.io"],
+      name: "POCKET SHOP TECH",
+      description: "A modern e-commerce platform for pocket-sized tech gadgets with intuitive shopping experience and responsive design.",
+      tech: ["HTML", "CSS", "Python"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      name: "Task Management System",
-      description: "Collaborative project management tool with real-time updates, file sharing, and team communication.",
-      tech: ["Next.js", "PostgreSQL", "Prisma", "WebSockets", "AWS S3"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      name: "Weather Analytics Dashboard",
-      description: "Data visualization platform displaying weather patterns with interactive charts and forecasting.",
-      tech: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      name: "Social Media API",
-      description: "RESTful API service for social media platform with authentication, posts, and real-time messaging.",
-      tech: ["Express.js", "MongoDB", "JWT", "Socket.io", "Cloudinary"],
+      name: "SIMPLE RESTAURANT MANAGEMENT APP",
+      description: "Full-stack restaurant management system with menu management, order tracking, and customer interface using modern web technologies.",
+      tech: ["Flask", "HTML", "CSS", "React"],
       liveUrl: "#",
       githubUrl: "#"
     }
   ];
-  const experience = [ FRESHER];
+  const experience = "FRESHER";
    
   const education = [
     {
@@ -296,29 +282,23 @@ const Portfolio = () => {
       <section id="experience" className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-center mb-16 gradient-text">
-            Experience (FRESHER)
+            Experience ({experience})
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="relative timeline-line">
-              {experience.map((exp, index) => (
-                <div key={index} className={`mb-12 ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:ml-auto'} md:w-1/2`}>
-                  <Card className="glass-card p-6 hover:glow-primary transition-all duration-300">
-                    <div className="timeline-dot"></div>
-                    <h3 className="text-xl font-orbitron font-semibold mb-2">{exp.role}</h3>
-                    <div className="text-primary font-medium mb-1">{exp.company}</div>
-                    <div className="text-muted-foreground text-sm mb-4">{exp.period}</div>
-                    <ul className="space-y-2">
-                      {exp.points.map((point, pointIndex) => (
-                        <li key={pointIndex} className="text-sm text-muted-foreground">
-                          • {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </Card>
-                </div>
-              ))}
-            </div>
+            <Card className="glass-card p-8 text-center">
+              <h3 className="text-2xl font-orbitron font-semibold mb-4 text-primary">
+                Ready to Start My Journey
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                As a fresh graduate, I'm eager to bring my academic knowledge and passion for web development 
+                to contribute to innovative projects and grow professionally.
+              </p>
+              <p className="text-muted-foreground">
+                I'm actively seeking opportunities to apply my skills in HTML, CSS, Python, Flask, React, 
+                and other modern web technologies in a dynamic work environment.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
