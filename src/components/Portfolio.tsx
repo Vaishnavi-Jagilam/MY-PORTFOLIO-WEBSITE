@@ -69,6 +69,19 @@ const Portfolio = () => {
     tech: ["Next.js", "PostgreSQL", "Prisma", "WebSockets", "AWS S3"],
     liveUrl: "#",
     githubUrl: "#"
+  }, {
+    name: "Weather Analytics Dashboard",
+    description: "Data visualization platform displaying weather patterns with interactive charts and forecasting.",
+    tech: ["React", "D3.js", "Python", "FastAPI", "Redis"],
+    liveUrl: "#",
+    githubUrl: "#"
+  }, {
+    name: "Social Media API",
+    description: "RESTful API service for social media platform with authentication, posts, and real-time messaging.",
+    tech: ["Express.js", "MongoDB", "JWT", "Socket.io", "Cloudinary"],
+    liveUrl: "#",
+    githubUrl: "#"
+  }];
   const experience = [{
     role: "Full-Stack Developer",
     company: "TechCorp Solutions",
