@@ -87,26 +87,8 @@ const Portfolio = () => {
       githubUrl: "#"
     }
   ];
-  const experience = [
-    {
-      role: "Full-Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2023 - Present",
-      points: ["Developed and maintained 5+ web applications serving 10,000+ users", "Implemented CI/CD pipelines reducing deployment time by 60%", "Led team of 3 developers in agile development practices"]
-    },
-    {
-      role: "Frontend Developer",
-      company: "StartupXYZ",
-      period: "2022 - 2023",
-      points: ["Built responsive React applications with modern UI/UX principles", "Optimized application performance achieving 95+ Lighthouse scores", "Collaborated with design team to implement pixel-perfect interfaces"]
-    },
-    {
-      role: "Web Developer Intern",
-      company: "Digital Agency",
-      period: "2021 - 2022",
-      points: ["Assisted in developing client websites using HTML, CSS, and JavaScript", "Learned modern frameworks and contributed to team projects", "Gained experience in version control and collaborative development"]
-    }
-  ];
+  const experience = [ FRESHER];
+   
   const education = [
     {
       degree: "Bachelor of Computer Science (Cyber Security)",
