@@ -57,53 +57,64 @@ const Portfolio = () => {
     backend: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'Python', 'Django', 'REST APIs'],
     tools: ['Git', 'Docker', 'AWS', 'Figma', 'VS Code', 'Postman']
   };
-  const projects = [{
-    name: "E-Commerce Platform",
-    description: "Full-stack MERN application with payment integration, admin dashboard, and real-time order tracking.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe", "Socket.io"],
-    liveUrl: "#",
-    githubUrl: "#"
-  }, {
-    name: "Task Management System",
-    description: "Collaborative project management tool with real-time updates, file sharing, and team communication.",
-    tech: ["Next.js", "PostgreSQL", "Prisma", "WebSockets", "AWS S3"],
-    liveUrl: "#",
-    githubUrl: "#"
-  }, {
-    name: "Weather Analytics Dashboard",
-    description: "Data visualization platform displaying weather patterns with interactive charts and forecasting.",
-    tech: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-    liveUrl: "#",
-    githubUrl: "#"
-  }, {
-    name: "Social Media API",
-    description: "RESTful API service for social media platform with authentication, posts, and real-time messaging.",
-    tech: ["Express.js", "MongoDB", "JWT", "Socket.io", "Cloudinary"],
-    liveUrl: "#",
-    githubUrl: "#"
-  }];
-  const experience = [{
-    role: "Full-Stack Developer",
-    company: "TechCorp Solutions",
-    period: "2023 - Present",
-    points: ["Developed and maintained 5+ web applications serving 10,000+ users", "Implemented CI/CD pipelines reducing deployment time by 60%", "Led team of 3 developers in agile development practices"]
-  }, {
-    role: "Frontend Developer",
-    company: "StartupXYZ",
-    period: "2022 - 2023",
-    points: ["Built responsive React applications with modern UI/UX principles", "Optimized application performance achieving 95+ Lighthouse scores", "Collaborated with design team to implement pixel-perfect interfaces"]
-  }, {
-    role: "Web Developer Intern",
-    company: "Digital Agency",
-    period: "2021 - 2022",
-    points: ["Assisted in developing client websites using HTML, CSS, and JavaScript", "Learned modern frameworks and contributed to team projects", "Gained experience in version control and collaborative development"]
-  }];
-  const education = [{
-    degree: "Bachelor of Computer Science (Cyber Security)",
-    institution: "GURUNANAK INSTITUTIONS",
-    year: "2019 - 2024",
-    description: "Specializing in Cybersecurity with focus on Software Engineering and Web Development"
-  }];
+  const projects = [
+    {
+      name: "E-Commerce Platform",
+      description: "Full-stack MERN application with payment integration, admin dashboard, and real-time order tracking.",
+      tech: ["React", "Node.js", "MongoDB", "Stripe", "Socket.io"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      name: "Task Management System",
+      description: "Collaborative project management tool with real-time updates, file sharing, and team communication.",
+      tech: ["Next.js", "PostgreSQL", "Prisma", "WebSockets", "AWS S3"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      name: "Weather Analytics Dashboard",
+      description: "Data visualization platform displaying weather patterns with interactive charts and forecasting.",
+      tech: ["React", "D3.js", "Python", "FastAPI", "Redis"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      name: "Social Media API",
+      description: "RESTful API service for social media platform with authentication, posts, and real-time messaging.",
+      tech: ["Express.js", "MongoDB", "JWT", "Socket.io", "Cloudinary"],
+      liveUrl: "#",
+      githubUrl: "#"
+    }
+  ];
+  const experience = [
+    {
+      role: "Full-Stack Developer",
+      company: "TechCorp Solutions",
+      period: "2023 - Present",
+      points: ["Developed and maintained 5+ web applications serving 10,000+ users", "Implemented CI/CD pipelines reducing deployment time by 60%", "Led team of 3 developers in agile development practices"]
+    },
+    {
+      role: "Frontend Developer",
+      company: "StartupXYZ",
+      period: "2022 - 2023",
+      points: ["Built responsive React applications with modern UI/UX principles", "Optimized application performance achieving 95+ Lighthouse scores", "Collaborated with design team to implement pixel-perfect interfaces"]
+    },
+    {
+      role: "Web Developer Intern",
+      company: "Digital Agency",
+      period: "2021 - 2022",
+      points: ["Assisted in developing client websites using HTML, CSS, and JavaScript", "Learned modern frameworks and contributed to team projects", "Gained experience in version control and collaborative development"]
+    }
+  ];
+  const education = [
+    {
+      degree: "Bachelor of Computer Science (Cyber Security)",
+      institution: "GURUNANAK INSTITUTIONS",
+      year: "2019 - 2024",
+      description: "Specializing in Cybersecurity with focus on Software Engineering and Web Development"
+    }
+  ];
   const certifications = ["AWS Certified Developer Associate", "MongoDB Certified Developer", "React Developer Certification", "Google Cloud Platform Fundamentals"];
   return <div className="min-h-screen">
       {/* Navigation */}
@@ -302,18 +313,29 @@ const Portfolio = () => {
       {/* Experience Timeline */}
       <section id="experience" className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-center mb-16 gradient-text">Experience
-
-
-
-
-(FRESHER)</h2>
+          <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-center mb-16 gradient-text">
+            Experience (FRESHER)
+          </h2>
           
           <div className="max-w-4xl mx-auto">
             <div className="relative timeline-line">
-              {experience.map((exp, index) => <div key={index} className={`mb-12 ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:ml-auto'} md:w-1/2`}>
-                  
-                </div>)}
+              {experience.map((exp, index) => (
+                <div key={index} className={`mb-12 ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:ml-auto'} md:w-1/2`}>
+                  <Card className="glass-card p-6 hover:glow-primary transition-all duration-300">
+                    <div className="timeline-dot"></div>
+                    <h3 className="text-xl font-orbitron font-semibold mb-2">{exp.role}</h3>
+                    <div className="text-primary font-medium mb-1">{exp.company}</div>
+                    <div className="text-muted-foreground text-sm mb-4">{exp.period}</div>
+                    <ul className="space-y-2">
+                      {exp.points.map((point, pointIndex) => (
+                        <li key={pointIndex} className="text-sm text-muted-foreground">
+                          • {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </Card>
+                </div>
+              ))}
             </div>
           </div>
         </div>
