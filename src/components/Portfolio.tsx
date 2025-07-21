@@ -62,7 +62,7 @@ const Portfolio = () => {
       name: "POCKET SHOP TECH",
       description: "A modern e-commerce platform for pocket-sized tech gadgets with intuitive shopping experience and responsive design.",
       tech: ["HTML", "CSS", "Python"],
-      liveUrl: "#",
+      liveUrl: "/pocket-shop",
       githubUrl: "#"
     },
     {
