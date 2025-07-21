@@ -79,7 +79,7 @@ const Portfolio = () => {
     {
       degree: "Bachelor of Computer Science (Cyber Security)",
       institution: "GURUNANAK INSTITUTIONS",
-      year: "2019 - 2024",
+      year: "2022 - 2026",
       description: "Specializing in Cybersecurity with focus on Software Engineering and Web Development"
     }
   ];
