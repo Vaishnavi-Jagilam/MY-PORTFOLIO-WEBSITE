@@ -1,9 +1,9 @@
 # MY PORTFOLIO
-
+file:///C:/VAISHNAVI/projects/My%20Portfolio/index.html
 get mt total info on my portfolio
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/2512a022-f523-47dd-b32f-9db06a2439b1
+
 
 
